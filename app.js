@@ -127,9 +127,9 @@ searchBtn.addEventListener('click', function () {
   sliders.length = 0;
   toggleSpinner();
 })
-const ss = document.getElementById('search');
+const searchInput = document.getElementById('search');
 
-ss.addEventListener('keypress', function (event) {
+searchInput.addEventListener('keypress', function (event) {
   console.log(event);
   if (event.key === "Enter") {
     document.querySelector('.main').style.display = 'none';
